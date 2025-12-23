@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Priyanshu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c0aced0bc2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logomain.png" class="logo animate-text delay-0">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#certificate">Certification</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p class="animate-text delay-1">Front-End Developer | Data Analyst</p>
+            <h1 class="animate-text delay-2">
+                Hi, I am <span>Priyanshu</span><br>From India
+            </h1>
+        </div>
+
+    </div>
+</div>    
+
+<!--------About section--------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Profile.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a Frontend Developer and a Data Analyst with a strong interest in building responsive, visually appealing, and user-friendly web applications while also working with data to extract meaningful insights. Possesses a solid foundation in HTML, CSS, JavaScript, React, and modern frontend practices, along with hands-on experience in data analysis, exploratory data analysis, and basic AI-driven insights through industry-recognized job simulations. Comfortable working with APIs, structured data, and analytical problem-solving. Motivated, detail-oriented, and eager to contribute to real-world projects, continuously learn new technologies, and grow as a versatile software professional.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('programming')">Programming</p>                    
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('coding profile')">Coding profile</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>MySQL</span><br>Database Management</li>
+                        <li><span>Data Analytics</span><br>Python, SQL, PowerBI. Excel</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="programming">
+                    <ul>
+                        <li><span>C++</span><br></li>
+                        <li><span>Python</span><br></li>
+                        <li><span>JavaScript</span><br></li>
+                        <li><span>HTML&CSS</span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2025</span><br>Btech from Techno International Newtown</li>
+                        <li><span>2021</span><br>Higher Secondary from Burnpur Riverside School</li>
+                        <li><span>2019</span> <br>Secondary from Burnpur Riverside School</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="coding profile">
+                    <ul>
+                        <li><a href="https://leetcode.com/u/rishu904b/">LeetCode</a></li>                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------certification section---------->
+
+<!-- Certificate Section -->
+<div id="certificate">
+  <div class="container">
+    <h1 class="sub-title">My Certifications</h1>
+
+    <div class="cert-slider-wrapper">
+      <!-- Left Arrow -->
+      <button class="cert-btn left" onclick="slideLeft()">&#10094;</button>
+
+      <!-- Slider -->
+      <div class="certificate-list" id="certSlider">
+        <div class="cert-card">
+          <i class="fa-brands fa-aws"></i>
+          <h2>AWS Certificate</h2>
+          <p>Developed foundational skills in cloud-oriented architecture by planning and structuring scalable hosting solutions for applications. </p>
+          <a href="images/Aws.pdf" download>Learn more</a>
+        </div>
+
+        <div class="cert-card">
+          <i class="fa-solid fa-asterisk"></i>
+          <h2>Walmart Certificate</h2>
+          <p>Completed hands-on tasks in advanced data structures, software architecture, relational database design, and data munging, simulating real-world software engineering workflows.</p>
+          <a href="images/Walmart Internship.pdf" download>Learn more</a>
+        </div>
+
+        <div class="cert-card">
+          <i class="fa-brands fa-openai"></i>
+          <h2>TATA GenAI</h2>
+          <p>Completed hands-on tasks in exploratory data analysis, AI-based delinquency prediction, and business reporting, applying generative AI to data-driven collections strategy.</p>
+          <a href="images/Tata Data.pdf" download>Learn more</a>
+        </div>
+
+        <div class="cert-card">
+          <i class="fa-solid fa-database" style="color: #ffffff;"></i>
+          <h2>Deloitte Data Analyst</h2>
+          <p>Completed practical tasks in data analysis and forensic technology, applying analytical thinking to real-world business scenarios. </p>
+          <a href="images/Deloitte.pdf" download>Learn more</a>
+        </div>
+
+        <div class="cert-card">
+          <i class="fa-brands fa-google" style="color: #ffffff;"></i>
+          <h2>Google Cloud</h2>
+          <p>Gained foundational knowledge of Google Cloud Platform services, cloud concepts, and basic deployment models.</p>
+          <a href="images/Google Cloud.pdf" download>Learn more</a>
+        </div>
+        
+        <div class="cert-card">
+          <i class="fa-brands fa-openai"></i>
+          <h2>TATA GenAI</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#">Learn more</a>
+        </div>
+
+        <!-- Add more cards if needed -->
+      </div>
+
+      <!-- Right Arrow -->
+      <button class="cert-btn right" onclick="slideRight()">&#10095;</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!----------- Project Section ------------->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                  <h3>Weather-forecast App</h3>
+                  <p>A responsive weather forecasting web application that provides real-time weather updates and accurate forecasts for any location. It displays temperature, humidity, wind speed, and weather conditions using a clean UI and API integration for live data.</p>
+                  <a href="https://leafy-seahorse-15e1ab.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Tours and travel Web App</h3>
+                    <p>A full-featured tours and travel web application that allows users to explore destinations, view tour packages, and make bookings easily. The platform focuses on a user-friendly experience with dynamic pricing features and seamless trip planning.</p>
+                    <a href="https://travel-planner-tawny.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Portfolio Web App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatem rem voluptatibus, sapiente maiores aliquam provident quibusdam reiciendis unde et qui inventore pariatur dicta expedita culpa placeat odit dolore. Id!</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!---------Contact Section--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:rishu904b@gmail.com">rishu904b@gmail.com</a></p> 
+                <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <a href="images/Front-end Resume.pdf" download class="btn btn2">Get My Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" id=""  rows="6" placeholder="Your Message"></textarea> 
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> reserved By Priyanshu</p>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    
+</script>
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwIs4KexTH4o4bROfKpnYl8rMbjS1Zj0Ve4Bv0BmLL2eLkznlkS6s5vH2inA86njtm1Mg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {msg.innerHTML = "Message sent successfully"})
+      setTimeout(function(){
+        msg.innerHTML = ""
+      },5000)
+      form.reset()
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<!-- JS for slider-->
+<script>
+  const slider = document.getElementById("certSlider");
+
+  function slideRight() {
+    slider.scrollLeft += slider.offsetWidth / 3;
+  }
+
+  function slideLeft() {
+    slider.scrollLeft -= slider.offsetWidth / 3;
+  }
+</script>
+    
+</body>  
+</html>
